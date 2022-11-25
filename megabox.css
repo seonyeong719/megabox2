@@ -236,3 +236,61 @@ a:visited {
     font-size: 30px;
     font-weight: 400;
 }
+
+.section2_ad {
+    display: flex;
+}
+
+.section2_ad12 {
+    z-index: 0;
+}
+
+.ad1 {
+    display: flex;
+}
+
+.ad1 > img:first-child {
+    width: 320px;
+    height: 250px;
+}
+
+.ad1 > img:last-child {
+    width: 360px;
+    height: 300px;
+}
+
+.ad2 > img {
+    border-radius: 5px;
+}
+
+.ad2 > img:first-child {
+    width: 425px;
+    height: 220px;
+    box-shadow: 0px 5px 10px #444;
+}
+
+.ad2 > img:last-child {
+    height: 220px;
+    padding-left: 13px;
+}
+
+.ad3 {
+    z-index: 0;
+}
+
+.ad3 > img {
+    border-radius: 5px;
+    height: 520px;
+}
+
+.section2_btns {
+    display: flex;
+    /* z-index: 0; */
+    position: relative;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.section2_btns > div > button {
+    flex-direction: column;
+}
