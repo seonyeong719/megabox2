@@ -188,22 +188,24 @@ a:visited {
     margin-top: 40px;
     margin-bottom: 50px;
     text-align: center;
+    position: relative;
 }
 
 .mouse > img {
-    animation: mouse 1s linear alternate infinite 2000;
+    top: 12px;
+    animation: mouse 2s linear infinite;
     position: absolute;
 }
 
 @keyframes mouse {
-    0% {
-        margin-top: 10px;
-    }
     50% {
-        margin-bottom: 0;
+        top: 0px;
+    }
+    70% {
+        top: 12px;
     }
     100% {
-        margin-bottom: 0;
+        top: 12px;
     }
 }
 
@@ -258,6 +260,10 @@ a:visited {
     height: 300px;
 }
 
+.ad2 {
+    display: flex;
+}
+
 .ad2 > img {
     border-radius: 5px;
 }
@@ -270,7 +276,8 @@ a:visited {
 
 .ad2 > img:last-child {
     height: 220px;
-    padding-left: 13px;
+    border-radius: 5px;
+    margin-left: 13px;
 }
 
 .ad3 {
@@ -290,6 +297,7 @@ a:visited {
     justify-content: space-between;
 }
 
-.section2_btns > div > button {
-    flex-direction: column;
+.section2_btns > div > button > img {
+    display: block;
+    margin: 0 auto;
 }
