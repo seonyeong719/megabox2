@@ -191,9 +191,8 @@ a:visited {
 }
 
 .mouse > img {
-    animation: mouse 1s linear infinite;
+    animation: mouse 1s linear alternate infinite 2000;
     position: absolute;
-    animation-direction: alternate;
 }
 
 @keyframes mouse {
