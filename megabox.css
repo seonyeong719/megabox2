@@ -178,6 +178,14 @@ a:visited {
     cursor: pointer;
 }
 
+.search_bar .search_info {
+}
+
+.search_info {
+    border-left: 1px solid #9d9898;
+    padding-left: 60px;
+}
+
 .search_info img {
     vertical-align: middle;
     margin-right: 2px;
