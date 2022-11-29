@@ -16,6 +16,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 20px 300px 20px 300px;
+    height: 60px;
 }
 
 .little_menu_left > ul {
@@ -33,6 +34,7 @@ header {
 .menu_left {
     display: flex;
     justify-content: space-between;
+    padding-top: 18px;
 }
 
 .menu_icon_left img {
@@ -42,17 +44,20 @@ header {
     padding-left: 50px;
     font-size: 17px;
 }
-/* .main_logo {
-} */
 
-/* .header_right {
-  display: flex;
-} */
+.header_left {
+    height: 100%;
+}
+
+.header_right {
+    height: 100%;
+}
 
 .little_menu_right > ul {
     display: flex;
     list-style: none;
     padding-left: 160px;
+    justify-content: flex-end;
 }
 
 .little_menu_right > ul li {
@@ -64,11 +69,21 @@ header {
 .menu_right {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .menu_txt_right span {
     padding-right: 50px;
     font-size: 17px;
+}
+
+.menu_txt_right {
+    padding-top: 8px;
+}
+
+.menu_icon_right {
+    display: flex;
+    align-items: center;
 }
 
 .menu_icon_right img {
@@ -80,6 +95,7 @@ header {
 .section1 {
     background-color: rgb(19, 14, 16);
     position: relative;
+    height: 780px;
 }
 .section1_wrap {
     color: white;
@@ -100,6 +116,7 @@ header {
     position: absolute;
     right: 18.5%;
     color: rgb(188, 182, 182);
+    font-size: 14px;
 }
 
 a {
@@ -114,10 +131,6 @@ a:visited {
 .movie_wrap {
     display: flex;
     justify-content: space-between;
-}
-
-.search_link {
-    display: flex;
 }
 
 .movie img {
@@ -151,23 +164,33 @@ a:visited {
 }
 
 .search_link {
+    display: flex;
     background-color: rgba(0, 0, 0, 0.2);
     justify-content: space-around;
     margin-top: 50px;
     padding: 20px 0 20px 0;
-    border: 1px solid white;
+}
+
+.search_link > div {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search_bar {
+    position: relative;
     color: #9d9898;
-    border-bottom: 1px solid #423e3e;
 }
 
 .search_bar > input {
     border: 0;
+    width: 160px;
     background-color: transparent;
     padding-left: 10px;
     color: #787878;
+    border-bottom: 1px solid #423e3e;
+    padding: 0 24px 4px 12px;
 }
 
 .search_bar > input:focus {
@@ -175,20 +198,19 @@ a:visited {
 }
 
 .search_bar i {
+    position: absolute;
+    right: 40px;
     cursor: pointer;
-}
-
-.search_bar .search_info {
+    margin-bottom: 8px;
 }
 
 .search_info {
-    border-left: 1px solid #9d9898;
-    padding-left: 60px;
+    border-left: 0.5px solid #999;
 }
 
 .search_info img {
     vertical-align: middle;
-    margin-right: 2px;
+    margin-right: 16px;
     color: #9d9898;
 }
 
@@ -244,6 +266,7 @@ a:visited {
 .benefits > span {
     font-size: 30px;
     font-weight: 400;
+    color: #351f66 !important;
 }
 
 .section2_ad {
@@ -299,13 +322,133 @@ a:visited {
 
 .section2_btns {
     display: flex;
-    /* z-index: 0; */
     position: relative;
     padding: 50px;
     justify-content: space-between;
 }
 
-.section2_btns > div > button > img {
+.section2_btns button > img {
     display: block;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.section2_btns button {
+    background-color: transparent !important;
+    border: none;
+}
+
+.section2_btns button span {
+    color: white;
+}
+
+/* section3 */
+
+.section3 {
+    position: relative;
+    padding: 50px 300px 50px 300px;
+    background-color: rgb(38, 36, 81);
+    height: 680px;
+}
+
+.section3 > div {
+    display: flex;
+}
+
+.curation {
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.curation > span {
+    font-size: 15px;
+    color: gray;
+}
+
+.curation > span i {
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.section3 > div > h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section3_aida img {
+    border-radius: 15px;
+}
+
+.aida_btn {
+    padding-top: 5px;
+}
+.aida_btn button {
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.aida_btn button:first-child {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.aida_btn button:last-child {
+    background-color: rgb(0, 123, 147);
+    border: none;
+    margin-left: 8px;
+}
+
+.section3_article {
+    padding-left: 50px;
+    color: white;
+}
+
+.summary {
+    padding-bottom: 10px;
+}
+
+.summary_title {
+    border-bottom: 1px solid gray;
+    width: 687px;
+    padding-bottom: 20px;
+}
+
+.summary_title p:first-child {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.summary_title p:last-child {
+    font-size: 36px;
+}
+
+.summary_content {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.section3_imgs {
+    display: flex;
+}
+
+.section3_imgs div img {
+    border-radius: 10px;
+}
+
+.section3_imgs div p {
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.full_ad {
+    width: 100%;
 }
